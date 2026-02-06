@@ -64,13 +64,6 @@ EXPERIMENT_NAME = "/Workspace/Users/your_email/experiment_name"
 8. **Word文書出力** - Markdown→docx変換(テーブル・書式対応)
 9. **評価** - LLM Judgeスコアラーによる品質評価
 
-## Free Editionでの利用について
-
-Databricks Free Editionでは一部機能に制限がある場合があります。本ノートブックではフォールバック機構を実装しています。
-
-- **Prompt Registry**: 利用不可の場合、Jinja2テンプレートで直接処理
-- **サーバーレスコンピュート**: Free Editionのクォータ制限に注意
-
 ## 関連リンク
 
 - [解説記事(Qiita)](Qiitaリンクをここに挿入)
