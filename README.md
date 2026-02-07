@@ -19,7 +19,6 @@ SIGNATE / FDUA 金融データ活用チャレンジ向けに構築した、Datab
 | Foundation Model APIs | データをDatabricks外に出さないLLM呼び出し |
 | MLflow Prompt Registry | 5種類のプロンプトテンプレートのバージョン管理 |
 | MLflow Tracing | 多段パイプラインの実行可視化・デバッグ |
-| LoggedModel | アプリケーションバージョンの管理 |
 | Scorers / Evaluation | LLM-as-a-Judgeによる提案書品質の自動評価 |
 | MLflow Experiment Tracking | 実験パラメータ・メトリクスの記録 |
 
@@ -63,6 +62,13 @@ EXPERIMENT_NAME = "/Workspace/Users/your_email/experiment_name"
 7. **提案書生成** - 3つの分析結果を統合した提案書テキストの生成
 8. **Word文書出力** - Markdown→docx変換(テーブル・書式対応)
 9. **評価** - LLM Judgeスコアラーによる品質評価
+
+## Free Editionでの利用について
+
+Databricks Free Editionでは一部機能に制限がある場合があります。本ノートブックではフォールバック機構を実装しています。
+
+- **Prompt Registry**: 利用不可の場合、Jinja2テンプレートで直接処理
+- **サーバーレスコンピュート**: Free Editionのクォータ制限に注意
 
 ## 関連リンク
 
